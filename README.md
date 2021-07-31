@@ -70,7 +70,7 @@ Top 5 rows are the source image (from the test set) and the bottom 5 are their c
 
 Experiment | MNIST | FASHION_MNIST | CIFAR10 | CIFAR100
 :---------:|:-----:|:-------------:|:-------:|:--------:
-BASE | ![MNIST reconstruction](./results/BASE_MNIST/resconstruction.png) | - | - | -
+BASE | ![MNIST reconstruction](./results/BASE_MNIST/reconstruction.png) | - | - | -
 
 ## Future Work
 

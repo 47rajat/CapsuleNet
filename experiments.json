@@ -1,0 +1,65 @@
+{
+    "BASE_MNIST": {
+        "dataset": {
+            "transform": {
+                "rotation": 10,
+                "padding": 2,
+                "size": 28
+            },
+            "kwargs": {
+                "pin_memory": true,
+                "num_workers": 1
+            },
+            "batch_size": 100,
+            "train_val_split": 0.1,
+            "num_classes": 10,
+            "input_dims": [
+                1,
+                28,
+                28
+            ],
+            "path": "data",
+            "name": "MNIST"
+        },
+        "files": {
+            "reconstruction_image_filename": "reconstruction.png",
+            "final_weights_filename": "final_weights.pkl",
+            "log_plot_filename": "plot.png",
+            "log_filename": "logs.csv",
+            "save_dir": "results/BASE_MNIST"
+        },
+        "hyperparameters": {
+            "lam_recon_comment, explains the math": "0.0005 * 784",
+            "lambda_reconstruction": 0.392,
+            "lr_decay": 0.9,
+            "lr": 0.001,
+            "num_epochs": 50
+        },
+        "architecture": {
+            "decoder": {
+                "fc_2": 1024,
+                "fc_1": 512
+            },
+            "dense_capsule": {
+                "num_iter": 3,
+                "output_capsule_dimension": 16,
+                "input_capsule_dimension": 8,
+                "num_in_capsules": 1152
+            },
+            "conv_capsule": {
+                "padding": 0,
+                "stride": 2,
+                "kernel_size": 9,
+                "capsule_dimension": 8,
+                "out_channels": 256,
+                "in_channels": 256
+            },
+            "conv_1": {
+                "padding": 0,
+                "stride": 1,
+                "kernel_size": 9,
+                "channels": 256
+            }
+        }
+    }
+}

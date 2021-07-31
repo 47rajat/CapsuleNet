@@ -1,4 +1,6 @@
 # CapsuleNet
+[![License](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](./LICENSE)
+
 ([Pytorch](https://pytorch.org)) Implementation of the [Dynamic Routing Between Capsules](https://arxiv.org/pdf/1710.09829.pdf) paper by Hinton et al.
 
 ## Usage

@@ -18,7 +18,7 @@ def test(model, test_loader, args, is_cuda_available=False):
 
     :return 
     """
-    assert len(test_loader.dataset) <= 0, "Invalid length of test loader"
+    assert len(test_loader.dataset) > 0, "Invalid length of test loader"
 
     model.eval()
     loss = 0

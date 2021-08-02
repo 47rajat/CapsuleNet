@@ -48,7 +48,7 @@ optional arguments:
 
 ```
 
-Results for both training and tests will be stored in the `results/{EXPERIMENT}` directory.
+Results for both training and tests will be stored in the directory defined in `["files"]["save_dir"]` for the `EXPERIMENT` in the [experiments.json](./experiments.json) file.
 
 ## Experiments & Results
 

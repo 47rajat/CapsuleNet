@@ -1,4 +1,12 @@
 {
+    "BASE_FASHION_MNIST": {
+        "files": {
+            "save_dir": "results/BASE_FASHION_MNIST"
+        },
+        "dataset": {
+            "name": "FASHION_MNIST"
+        }
+    },
     "BASE_MNIST": {
         "dataset": {
             "transform": {

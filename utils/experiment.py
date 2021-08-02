@@ -1,4 +1,4 @@
-from typing import Tuple, Dict
+from typing import Dict
 import json
 
 EXPERIMENTS_FILE = './experiments.json'
@@ -9,10 +9,11 @@ def load_experiment_args(name: str) -> Dict:
     with open(EXPERIMENTS_FILE, 'r') as f:
         all_experiments = json.load(f)
 
-    if name == BASE_EXPERIMENT:
-        return all_experiments[BASE_EXPERIMENT]
+    experiment = all_experiments[BASE_EXPERIMENT]
+    if name != BASE_EXPERIMENT:
+        merge_experiment(experiment, all_experiments[name])
 
-    return merge_experiment(all_experiments[BASE_EXPERIMENT], all_experiments[name])
+    return experiment
 
 def merge_experiment(base_experiment: Dict, override_experiment: Dict)->Dict:
     for k, v in override_experiment.items():

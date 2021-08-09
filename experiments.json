@@ -20,7 +20,10 @@
         },
         "architecture": {
             "dense_capsule": {
-                "num_in_capsules": 2048
+                "num_in_capsules": 4096
+            },
+            "conv_capsule": {
+                "out_channels": 512
             }
         }
     },

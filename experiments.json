@@ -1,4 +1,14 @@
 {
+    "BASE_CIFAR100": {
+        "parent_experiment": "BASE_CIFAR10",
+        "files": {
+            "save_dir": "results/BASE_CIFAR100"
+        },
+        "dataset": {
+            "name": "CIFAR100",
+            "num_classes": 100
+        }
+    },
     "BASE_CIFAR10": {
         "files": {
             "save_dir": "results/BASE_CIFAR10"

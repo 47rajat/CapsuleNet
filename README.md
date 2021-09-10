@@ -56,27 +56,27 @@ Following are the results obtained for various experiments (defined in [experime
 
 ### Test Accuracy (%)
 
-Experiment | MNIST| FASHION_MNIST | CIFAR10 | CIFAR100
-:----------:|:----:|:-------------:|:-------:|:-------:
-BASE        |99.690|    91.370     |  71.530 |    -
+Experiment | MNIST| FASHION_MNIST | CIFAR10 
+:----------:|:----:|:-------------:|:-------:
+BASE        |99.690|    91.370     |  71.530 
 
 ### Train-Val Loss & Accuracy(%)
 
-Experiment | MNIST | FASHION_MNIST | CIFAR10 | CIFAR100
-:---------:|:-----:|:-------------:|:-------:|:--------:
-BASE | ![MNIST train-val loss & acc](./results/BASE_MNIST/plot.png) | ![FASHION MNIST train-val loss & acc](./results/BASE_FASHION_MNIST/plot.png) | ![CIFAR10 train-val loss & acc](./results/BASE_CIFAR10/plot.png) | -
+Experiment | MNIST | FASHION_MNIST | CIFAR10
+:---------:|:-----:|:-------------:|:-------:
+BASE | ![MNIST train-val loss & acc](./results/BASE_MNIST/plot.png) | ![FASHION MNIST train-val loss & acc](./results/BASE_FASHION_MNIST/plot.png) | ![CIFAR10 train-val loss & acc](./results/BASE_CIFAR10/plot.png) 
 
 ### Reconstruction
 
 Top 5 rows are the source image (from the test set) and the bottom 5 are their corresponding reconstruction.
 
-Experiment | MNIST | FASHION_MNIST | CIFAR10 | CIFAR100
-:---------:|:-----:|:-------------:|:-------:|:--------:
-BASE | ![MNIST reconstruction](./results/BASE_MNIST/reconstruction.png) | ![FASHION MNIST reconstruction](./results/BASE_FASHION_MNIST/reconstruction.png) | ![CIFAR10 reconstruction](./results/BASE_CIFAR10/reconstruction.png) | -
+Experiment | MNIST | FASHION_MNIST | CIFAR10
+:---------:|:-----:|:-------------:|:-------:
+BASE | ![MNIST reconstruction](./results/BASE_MNIST/reconstruction.png) | ![FASHION MNIST reconstruction](./results/BASE_FASHION_MNIST/reconstruction.png) | ![CIFAR10 reconstruction](./results/BASE_CIFAR10/reconstruction.png)
 
 ## Future Work
 
-- [ ] Add results for other datasets
+- [x] Add results for other datasets
 - [ ] Try using smaller batch size (32 instead of 100)
 - [ ] Change optimizer from Adam to SGD with Nesterov momentum
 

@@ -1,4 +1,12 @@
 {
+    "BATCH_32_MNIST": {
+        "files": {
+            "save_dir": "results/BATCH_32_MNIST"
+        },
+        "dataset": {
+            "batch_size": 32
+        }
+    },
     "BASE_CIFAR10": {
         "files": {
             "save_dir": "results/BASE_CIFAR10"

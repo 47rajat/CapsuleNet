@@ -59,12 +59,14 @@ Following are the results obtained for various experiments (defined in [experime
 Experiment | MNIST| FASHION_MNIST | CIFAR10 
 :----------:|:----:|:-------------:|:-------:
 BASE        |99.690|    91.370     |  71.530 
+BATCH_32    |99.710|      -        |    -
 
 ### Train-Val Loss & Accuracy(%)
 
 Experiment | MNIST | FASHION_MNIST | CIFAR10
 :---------:|:-----:|:-------------:|:-------:
 BASE | ![MNIST train-val loss & acc](./results/BASE_MNIST/plot.png) | ![FASHION MNIST train-val loss & acc](./results/BASE_FASHION_MNIST/plot.png) | ![CIFAR10 train-val loss & acc](./results/BASE_CIFAR10/plot.png) 
+BATCH_32 | ![MNIST train-val loss & acc](./results/BATCH_32_MNIST/plot.png) | - | - 
 
 ### Reconstruction
 
@@ -73,6 +75,7 @@ Top 5 rows are the source image (from the test set) and the bottom 5 are their c
 Experiment | MNIST | FASHION_MNIST | CIFAR10
 :---------:|:-----:|:-------------:|:-------:
 BASE | ![MNIST reconstruction](./results/BASE_MNIST/reconstruction.png) | ![FASHION MNIST reconstruction](./results/BASE_FASHION_MNIST/reconstruction.png) | ![CIFAR10 reconstruction](./results/BASE_CIFAR10/reconstruction.png)
+BATCH_32 | ![MNIST reconstruction](./results/BATCH_32_MNIST/reconstruction.png) | - | -
 
 ## Future Work
 

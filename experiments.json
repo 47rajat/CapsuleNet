@@ -1,4 +1,13 @@
 {
+    "BATCH_32_FASHION_MNIST": {
+        "parent_experiment": "BASE_FASHION_MNIST",
+        "files": {
+            "save_dir": "results/BATCH_32_FASHION_MNIST"
+        },
+        "dataset": {
+            "batch_size": 32
+        }
+    },
     "BATCH_32_MNIST": {
         "files": {
             "save_dir": "results/BATCH_32_MNIST"

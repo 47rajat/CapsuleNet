@@ -1,4 +1,13 @@
 {
+    "BATCH_32_CIFAR10": {
+        "parent_experiment": "BASE_CIFAR10",
+        "files": {
+            "save_dir": "results/BATCH_32_CIFAR10"
+        },
+        "dataset": {
+            "batch_size": 32
+        }
+    },
     "BATCH_32_FASHION_MNIST": {
         "parent_experiment": "BASE_FASHION_MNIST",
         "files": {

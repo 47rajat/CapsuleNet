@@ -3,7 +3,7 @@ import constants
 from dataset import load_dataset
 from test import test, init_model
 from time import time
-from torch.optim import Adam, lr_scheduler
+from torch.optim import Adam, lr_scheduler, SGD
 from utils import one_hot_encode, load_experiment_args, Logger, BASE_EXPERIMENT, plot_log
 import argparse
 import csv
@@ -11,6 +11,25 @@ import json
 import os
 import torch
 
+def get_optimizer(model, hyperparameters):
+    """
+    Returns an optimizer using the provided hyperparamters.
+
+    :param model: The model which is to be trained using the optimizer.
+    :param hyperparameters: hyperparameters to be used for selection.
+
+    :return: Optimizer for the provided model.
+    """
+
+    if hyperparameters[constants.OPTIMIZER] == "SGD":
+        return SGD(
+            model.parameters(),
+            lr=hyperparameters[constants.LR],
+            momentum=hyperparameters[constants.MOMENTUM],
+            nesterov=hyperparameters[constants.NESTEROV],
+        )
+    # By default use Adam.
+    return Adam(model.parameters(), lr=hyperparameters[constants.LR])
 
 def train(model, train_loader, val_loader, args):
     """
@@ -36,7 +55,8 @@ def train(model, train_loader, val_loader, args):
     hyperparameters = args[constants.HYPERPARAMETERS]
 
     t_start = time()
-    optimizer = Adam(model.parameters(), lr=hyperparameters[constants.LR])
+    optimizer = get_optimizer(model, hyperparameters)
+    print('Optimizer:', optimizer)
     lr_decay = lr_scheduler.ExponentialLR(optimizer,
                                           gamma=hyperparameters[constants.LR_DECAY])
 

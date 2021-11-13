@@ -1,4 +1,17 @@
 {
+    "SGD_MNIST": {
+        "files": {
+            "save_dir": "results/SGD_MNIST"
+        },
+        "dataset": {
+            "batch_size": 32
+        },
+        "hyperparameters":{
+            "optimizer": "SGD",
+            "momentum": 0.9,
+            "nesterov": true
+        }
+    },
     "BATCH_32_CIFAR10": {
         "parent_experiment": "BASE_CIFAR10",
         "files": {

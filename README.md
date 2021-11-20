@@ -78,7 +78,7 @@ Experiment | MNIST | FASHION_MNIST | CIFAR10
 :---------:|:-----:|:-------------:|:-------:
 BASE | ![MNIST reconstruction](./results/BASE_MNIST/reconstruction.png) | ![FASHION MNIST reconstruction](./results/BASE_FASHION_MNIST/reconstruction.png) | ![CIFAR10 reconstruction](./results/BASE_CIFAR10/reconstruction.png)
 BATCH_32 | ![MNIST reconstruction](./results/BATCH_32_MNIST/reconstruction.png) | ![FASHION MNIST reconstruction](./results/BATCH_32_FASHION_MNIST/reconstruction.png) | -
-SGD | ![MNIST reconstruction](./results/SGD/reconstruction.png) | -  | -
+SGD | ![MNIST reconstruction](./results/SGD_MNIST/reconstruction.png) | -  | -
 
 ## Future Work
 

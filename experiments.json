@@ -7,6 +7,7 @@
             "batch_size": 32
         },
         "hyperparameters":{
+            "lr": 0.1,
             "optimizer": "SGD",
             "momentum": 0.9,
             "nesterov": true

@@ -60,6 +60,7 @@ Experiment | MNIST| FASHION_MNIST | CIFAR10
 :----------:|:----:|:-------------:|:-------:
 BASE        |99.690|    91.370     |  71.530 
 BATCH_32    |**99.710**|    **91.490**     |    -
+SGD         | 99.480  |    -       |  -
 
 ### Train-Val Loss & Accuracy(%)
 
@@ -67,6 +68,7 @@ Experiment | MNIST | FASHION_MNIST | CIFAR10
 :---------:|:-----:|:-------------:|:-------:
 BASE | ![MNIST train-val loss & acc](./results/BASE_MNIST/plot.png) | ![FASHION MNIST train-val loss & acc](./results/BASE_FASHION_MNIST/plot.png) | ![CIFAR10 train-val loss & acc](./results/BASE_CIFAR10/plot.png) 
 BATCH_32 | ![MNIST train-val loss & acc](./results/BATCH_32_MNIST/plot.png) | ![FASHION MNIST train-val loss & acc](./results/BATCH_32_FASHION_MNIST/plot.png) | - 
+SGD | ![MNIST train-val loss & acc](./results/SGD_MNIST/plot.png) | -  | - 
 
 ### Reconstruction
 
@@ -76,12 +78,14 @@ Experiment | MNIST | FASHION_MNIST | CIFAR10
 :---------:|:-----:|:-------------:|:-------:
 BASE | ![MNIST reconstruction](./results/BASE_MNIST/reconstruction.png) | ![FASHION MNIST reconstruction](./results/BASE_FASHION_MNIST/reconstruction.png) | ![CIFAR10 reconstruction](./results/BASE_CIFAR10/reconstruction.png)
 BATCH_32 | ![MNIST reconstruction](./results/BATCH_32_MNIST/reconstruction.png) | ![FASHION MNIST reconstruction](./results/BATCH_32_FASHION_MNIST/reconstruction.png) | -
+SGD | ![MNIST reconstruction](./results/SGD/reconstruction.png) | -  | -
 
 ## Future Work
 
 - [x] Add results for other datasets
 - [ ] Try using smaller batch size (32 instead of 100)
 - [ ] Change optimizer from Adam to SGD with Nesterov momentum
+- [ ] Figure out why reconstruction doesn't work with SGD
 
 ## References
 

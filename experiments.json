@@ -1,4 +1,16 @@
 {
+    "SGD_FASHION_MNIST": {
+        "parent_experiment": "BATCH_32_FASHION_MNIST",
+        "files": {
+            "save_dir": "results/SGD_FASHION_MNIST"
+        },
+        "hyperparameters":{
+            "lr": 0.1,
+            "optimizer": "SGD",
+            "momentum": 0.9,
+            "nesterov": true
+        }
+    },
     "SGD_MNIST": {
         "files": {
             "save_dir": "results/SGD_MNIST"
